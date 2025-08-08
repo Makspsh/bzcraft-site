@@ -1,0 +1,76 @@
+@use '../assets';
+
+.rules {
+  height: 1250px;
+
+  &__title {
+    text-align: center;
+  }
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 180px;
+}
+
+.swiper-slide {
+  box-shadow: 25px 50px 100px 10px assets.$green;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+
+  p {
+    color: assets.$black;
+  }
+  .slide-subtitle {
+    text-align: end;
+  }
+  .slide-text {
+    font-size: 16px;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+  }
+}
+
+.swiper-slide img {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  width: 120%;
+}
+
+.swiper-button-prev {
+  background-image: url("./rules/arrow-left.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  left: 450px;
+  width: 75px;
+  &:hover {
+    background-image: url("./rules/arrow-left--active.svg") !important;
+  }
+}
+
+.swiper-button-next {
+  background-image: url("./rules/arrow-right.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  right: 395px;
+  width: 75px;
+
+  &:hover {
+    background-image: url("./rules/arrow-right--active.svg") !important;
+  }
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}

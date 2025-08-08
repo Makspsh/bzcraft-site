@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>БЗ-крафт</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__top">
+            <ul class="header__top-list">
+              <li class="header__top-item">
+                <a href="#essence" class="header__top-link">о нас</a>
+              </li>
+              <li class="header__top-item">
+                <a href="#rules" class="header__top-link">правила</a>
+              </li>
+              <li class="header__top-item">
+                <a href="#pack" class="header__top-link">сборка</a>
+              </li>
+              <li class="header__top-item">
+                <a href="#advice" class="header__top-link">советы</a>
+              </li>
+              <li class="header__top-item">
+                <a href="#contact" class="header__top-link">контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__body">
+            <h1 class="title-h1">Навигационный сайт</h1>
+            <h2 class="title-h2">по <strong>БЗ-крафту</strong></h2>
+            <p class="text">Обязательно прочитай правила!</p>
+            <p>
+              <em>На странице собраны:</em> <br />
+              - информация о сервере<br />
+              - правила<br />
+              - моды / ресурспаки <em>( желательны к установке )</em><br />
+              - общие советы<br />
+              - как попасть на сервер <br />
+              - контакты, к кому можно обратиться за помощью
+            </p>
+          </div>
+        </div>
+      </header>
+      <section class="about">
+        <h1 class="title-h1 about__title">Информация о сервере</h1>
+        <ul class="about__table">
+          <li class="about__table-row1">
+            <ul class="about__row1-list">
+              <li class="about__row1-item">
+                <img
+                  src="./about/minecraft-java.png"
+                  class="about__row1-platform"
+                />
+              </li>
+              <li class="about__row1-item">
+                <p class="subtitle about__row1-version">1.21<br />1.21.1</p>
+              </li>
+              <li class="about__row1-item">
+                <p class="subtitle about__row1-license">не требуется</p>
+              </li>
+              <li class="about__row1-item">
+                <div class="about__row1-whitelist"></div>
+                <img src="./about/correct-icon.svg" />
+              </li>
+            </ul>
+          </li>
+          <li class="about__table-row2">
+            <ul class="about__row2-list">
+              <li class="about__row2-item">
+                <div class="about__row2-empty"></div>
+              </li>
+              <li class="about__row2-item">
+                <img
+                  src="./about/version-icon.svg"
+                  class="about__row2-version--img"
+                />
+                <p class="subtitle about__row2-version--text">
+                  версия<br />(fabric)
+                </p>
+              </li>
+              <li class="about__row2-item">
+                <img
+                  src="./about/license-icon.svg"
+                  class="about__row2-license--img"
+                />
+                <p class="subtitle about__row2-license--text">лицензия</p>
+              </li>
+              <li class="about__row2-item">
+                <img
+                  src="./about/whitelist-icon.svg"
+                  class="about__row2-whitelist--img"
+                />
+                <p class="subtitle about__row2-whitelist--text">whitelist</p>
+              </li>
+            </ul>
+          </li>
+          <li class="about__table-row3">
+            <ul class="about__row3-list">
+              <li class="about__row3-item">
+                <img
+                  src="./about/minecraft-bedrock.png"
+                  class="about__row3-platform"
+                />
+              </li>
+              <li class="about__row3-item">
+                <p class="subtitle about__row3-version">последняя</p>
+              </li>
+              <li class="about__row3-item">
+                <p class="subtitle about__row3-license">не требуется</p>
+              </li>
+              <li class="about__row3-item">
+                <div class="about__row3-whitelist"></div>
+                <img src="./about/correct-icon.svg" />
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="essence" id="essence">
+        <h1 class="title-h1 essence__title">суть проекта</h1>
+        <div class="essence__body">
+          <p class="subtitle essence__text">
+            Создание приятной среды вокруг
+            <strong>богатырской заставы</strong>, где её участники могли бы в
+            течение года, в независимости от расстояния друг от друга,
+            продолжать общаться и пытаться переносить опыт Заставы в майнкрафт
+          </p>
+          <img src="/essence/essence-img.png" alt="" class="essence__img" />
+        </div>
+      </section>
+      <section class="rules" id="rules">
+        <h1 class="title-h1 rules__title">правила</h1>
+        <h2 class="title-h2 rules__title">(от 13.03.2025)</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./rules/book.png" alt="" />
+              <p class="subtitle slide-subtitle">#1</p>
+              <p class="text slide-text">
+                на сервере главенствует православие - если же вы к православным
+                не относитесь, то, играя на сервере, ожидается что вы, по
+                крайней мере, не плохо к православию относитесь. Из этого
+                следует
+                <strong>запрет</strong> на сквернословие, богохульство и
+                подобное
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./rules/book.png" alt="" />
+              <p class="subtitle slide-subtitle">#2</p>
+              <p class="text slide-text">
+                гриферство, вне заранее обговоренных и согласованных с обеих
+                сторон ситуаций, запрещено. В том числе воровство
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./rules/book.png" alt="" />
+              <p class="subtitle slide-subtitle">#3</p>
+              <p class="text slide-text">
+                троллинг (за исключением <strong>сугубо доброго</strong>),
+                псиопы, клевета - запрещены
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./rules/book.png" alt="" />
+              <p class="subtitle slide-subtitle">#4</p>
+              <p class="text slide-text">
+                лаг-машины, дюп, не оптимизированные фермы запрещены (исключение
+                - сапрессор, только для декоративных/логистических целей, перед
+                использованием посоветуйтесь с администрацией)
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./rules/book.png" alt="" />
+              <p class="subtitle slide-subtitle">#5</p>
+              <p class="text slide-text">
+                территория в радиусе <strong>2000</strong> блоков от спавна
+                (-223 -144) формально принадлежит монарху, однако,
+                <strong>при условии согласования с монархом</strong>
+                - строительство, изменение ландшафта, рубка дерева и добыча иных
+                природных ресурсов разрешена
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./rules/book.png" alt="" />
+              <p class="subtitle slide-subtitle">#6</p>
+              <p class="text slide-text">
+                мера наказания, в случае нарушения правил, избирается монархом
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./rules/book.png" alt="" />
+              <p class="subtitle slide-subtitle">#7</p>
+              <p class="text slide-text">
+                правила могут и должны трактоваться в рамках доброй логики и
+                желания помогать другим людям/не вредить им. Если вы к такому
+                пока не готовы, вам стоит подумать о целях вашего пребывания на
+                сервере
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./rules/book.png" alt="" />
+              <p class="subtitle slide-subtitle">#8</p>
+              <p class="text slide-text">
+                незнание правил не осовбождает от ответственности
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./rules/book.png" alt="" />
+              <p class="subtitle slide-subtitle">#9</p>
+              <p class="text slide-text">
+                новые своды законов могут добавляться в любое время монархом
+                и/или уполномоченными им лицами
+              </p>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <section class="pack" id="pack">
+        <h1 class="title-h1">сборка</h1>
+        <h2 class="title-h2">
+          На диске собраны текстурпаки и моды, дополняющие игру. Устанавливать
+          их не обязательно, но очень <strong>желательно</strong>
+        </h2>
+        <div class="pack__body">
+          <div class="pack__download">
+            <p class="text">скачать:</p>
+            <a target="_blank" href="https://disk.yandex.ru/d/ge217kjKZpndeQ"
+              ><img src="/pack/donwload-icon2.png" alt=""
+            /></a>
+            <p class="text">mods(client_size+)<br />более требовательный</p>
+          </div>
+          <h2 class="title-h2">Примеры того, что они добавляют:</h2>
+          <ul class="pack__list">
+            <li class="pack__list-item">
+              <p class="text">ресурспак:</p>
+              <img src="./pack/1-img.jpg" alt="" />
+              <p class="text">переименованные предметы</p>
+            </li>
+            <li class="pack__list-item">
+              <p class="text">мод:</p>
+              <img src="./pack/2-img.jpg" alt="" />
+              <p class="text">улучшенное небо</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="advice" id="advice">
+        <div class="advice__inner">
+          <h1 class="title-h1 advice__title">советы</h1>
+          <div class="advice__box">
+            <input
+              class="advice__radio"
+              id="one"
+              name="group"
+              type="radio"
+              checked
+            />
+            <input class="advice__radio" id="two" name="group" type="radio" />
+            <input class="advice__radio" id="three" name="group" type="radio" />
+            <div class="advice__tabs">
+              <label class="advice__tab" id="one-tab" for="one">1</label>
+              <label class="advice__tab" id="two-tab" for="two">2</label>
+              <label class="advice__tab" id="three-tab" for="three">3</label>
+            </div>
+            <div class="advice__panels">
+              <div class="advice__panel" id="one-panel">
+                <p class="text">
+                  В случае, если вы играете на пиратской версии майнкрафта.
+                  Используйте FrogLauncher
+                </p>
+                <p class="text">
+                  FrogLauncher на рынке имеет более благоприятную репутацию;
+                  красивый, удобный и функциональный дизайн; сделан русскими
+                  разработчиками.
+                </p>
+                <p class="text">
+                  Будьте осторожны при выборе пиратских приложений!
+                </p>
+              </div>
+              <div class="advice__panel" id="two-panel">
+                <p class="text">Стройте красиво!</p>
+                <p class="text">
+                  Будь то дом или ферма, старайтесь, по возможности, сделать их
+                  красивыми. Скажем НЕТ землянкам и десяткам ферм из булыжника.
+                </p>
+                <p class="text">
+                  Декор - как внутри, так и снаружи постройки!!!
+                </p>
+                <p class="text">
+                  Красиво строить не сложно, а всему серверу приятно. в том
+                  числе и вам!
+                </p>
+              </div>
+              <div class="advice__panel" id="three-panel">
+                <p class="text">
+                  Пробуйте больше нового, в том числе, за пределами выживанмя.
+                </p>
+                <p class="text">
+                  Изучайте механизмы, моды, датапаки, ресурспаки,
+                  строительство....
+                </p>
+                <p class="text">
+                  Любовь, например, к датапакам/модам, может в будущем сделать
+                  из вас программиста; к механизмам - инженера.
+                </p>
+                <p class="text">Расширяйте кругозор!</p>
+              </div>
+            </div>
+
+            <div class="advice__inner-list">
+              <div class="advice__inner-item" id="one-inner">
+                <img
+                  class="advice__inner-img--left"
+                  src="/advice/advice1-left.png"
+                  alt=""
+                />
+                <img
+                  class="advice__inner-img--right"
+                  src="/advice/advice1-right.png"
+                  alt=""
+                />
+              </div>
+              <div class="advice__inner-item" id="two-inner">
+                <img
+                  class="advice__inner-img--left"
+                  src="/advice/advice2-left.png"
+                  alt=""
+                />
+                <img
+                  class="advice__inner-img--right"
+                  src="/advice/advice2-right.png"
+                  alt=""
+                />
+              </div>
+              <div class="advice__inner-item" id="three-inner">
+                <img
+                  class="advice__inner-img--left"
+                  src="/advice/advice3-left.png"
+                  alt=""
+                />
+                <img
+                  class="advice__inner-img--right"
+                  src="/advice/advice3-right.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h1 class="title-h1">как попасть на сервер</h1>
+        <ul class="contact__ip-list">
+          <li class="contact__ip-item">
+            <h2 class="title-h2">IP-adress</h2>
+            <p class="subtitle"><em>(java)</em></p>
+            <h2 class="title-h2 ip">bz-craft.ru</h2>
+          </li>
+          <li class="contact__ip-item">
+            <h2 class="title-h2">IP-adress</h2>
+            <p class="subtitle"><em>(bedrock)</em></p>
+            <h2 class="title-h2 ip">game.bz-craft.ru</h2>
+            <p class="subtitle"><em>port: 19132</em></p>
+          </li>
+        </ul>
+        <h1 class="title-h2">
+          на сервере стоит Whitelist, поэтому предварительно вас должен добавить
+          администратор
+        </h1>
+        <h1 class="title-h2">
+          напишите в беседу БЗ-крафта или лично Еремею Ильичу
+        </h1>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

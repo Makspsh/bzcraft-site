@@ -1,0 +1,99 @@
+// fonts
+
+@font-face {
+  font-family: "minecraft";
+  src: url("../fonts/minecraft.woff2") format("woff2");
+  font-style: normal;
+}
+
+// colors
+
+$black: #151515;
+$white: #D9D9D9;
+$green: #3A8650;
+$purple: #3a12aa;
+$blue: #2492A3;
+$gradient-color: radial-gradient(circle,rgba(58, 134, 80, 1) 0%, rgba(36, 146, 163, 1) 53%, rgba(7, 36, 97, 1) 100%);
+
+// titles
+
+.title-h1 {
+  font-family: "minecraft";
+  font-size: 64px;
+  line-height: 120%;
+  color: $white;
+}
+
+.title-h2 {
+  font-family: "minecraft";
+  font-size: 48px;
+  line-height: 120%;
+  color: $white;
+}
+
+.subtitle {
+  font-family: "minecraft";
+  font-size: 32px;
+  line-height: 120%;
+  color: $white;
+}
+
+.text {
+  font-family: "minecraft";
+  font-size: 24px;
+  line-height: 120%;
+  color: $white;
+}
+
+// main
+
+body {
+  background-color: $black;
+  font-family: "minecraft";
+  font-size: 24px;
+  line-height: 120%;
+  color: $white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.wrapper {
+  padding: 0 120px;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: $green;
+}
+
+li {
+  list-style: none;
+  
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+// up button
+
+.upbtn {
+    z-index: 9999;
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("./btn-up.png")
+}
+.upbtn:hover {
+    transform: scale(1.2)!important;
+}

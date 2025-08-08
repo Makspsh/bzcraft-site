@@ -1,0 +1,135 @@
+@use "../assets";
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.advice {
+
+  margin: 120px 0;
+
+  &__title {
+    text-align: center;
+    margin-left: -50px;
+  }
+
+
+  // .advice__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 80px;
+  }
+
+  &__inner-list {
+    overflow: hidden;
+  }
+
+  &__inner-item {
+    display: none;
+
+    img {
+      z-index: -1;
+    }
+  }
+
+  &__inner-img {
+    &--left {
+      position: absolute;
+      left: -650px;
+      top: 0px;
+
+    }
+    &--right {
+      position: absolute;
+      top: 0px;
+      right: -550px;
+    }
+  }
+
+  // .advice__box
+
+  &__box {
+    background-image: url("./advice/frame-img.png");
+    background-repeat: no-repeat;
+    height: 590px;
+    position: relative;
+  }
+
+  // .advice__radio
+
+  &__radio {
+    display: none;
+  }
+
+  // .advice__tabs
+
+  &__tabs {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+  }
+
+  // .advice__tab
+
+  &__tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0px 2px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+  }
+
+  // .advice__panels
+
+  &__panels { 
+    margin-top: 70px;
+    margin-left: 20px;
+    min-height: 200px;
+    width: 75%;
+    max-width: 500px;
+    border-radius: 3px;
+    padding: 20px;
+  }
+
+  // .advice__panel
+
+  &__panel {
+    display: none;
+    animation: fadein 0.8s;
+    p {
+      text-align: center;
+      line-height: 110%;
+    }
+  }
+}
+
+#one:checked ~ .advice__inner-list #one-inner,
+#two:checked ~ .advice__inner-list #two-inner,
+#three:checked ~ .advice__inner-list #three-inner {
+  display: block;
+}
+
+#one:checked ~ .advice__panels #one-panel,
+#two:checked ~ .advice__panels #two-panel,
+#three:checked ~ .advice__panels #three-panel {
+  display: block;
+}
+#one:checked ~ .advice__tabs #one-tab,
+#two:checked ~ .advice__tabs #two-tab,
+#three:checked ~ .advice__tabs #three-tab {
+  background: #fffffff6;
+  color: #000;
+  border-top: 3px solid #000;
+}
+
+

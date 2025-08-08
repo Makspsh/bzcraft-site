@@ -1,0 +1,19 @@
+{
+  "name": "bz-kraft",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build-css": "sass src/style.scss dist/style.css --no-source-map"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.89.2",
+    "vite": "^7.0.6"
+  },
+  "dependencies": {
+    "swiper": "^11.2.10"
+  }
+}

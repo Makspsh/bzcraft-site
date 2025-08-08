@@ -1,0 +1,39 @@
+@use '../assets';
+
+.contact {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1, h2, p {
+    text-align: center;
+    line-height: 100%;
+  }
+
+		// .contact__ip-list
+
+		&__ip-list {
+      display: flex;
+      justify-content: space-between;
+      
+		}
+
+		// .contact__ip-item
+
+		&__ip-item {
+      margin-right: 300px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      em {
+        color: assets.$blue;
+      }
+      
+		}
+}
+
+.ip {
+  text-decoration: underline;
+}

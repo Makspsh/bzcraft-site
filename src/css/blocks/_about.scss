@@ -1,0 +1,248 @@
+@use '../assets';
+
+.about {
+  padding-top: 120px;
+
+  // .about__title
+
+  &__title {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  // .about__table
+
+  &__table {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .about__table-row1
+
+  &__table-row1 {
+  }
+
+  // .about__row1-list
+
+  &__row1-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .about__row1-item
+
+  &__row1-item {
+    margin-left: -40px;
+  }
+
+  // .about__row1-platform
+
+  &__row1-platform {
+    width: 100%;
+  }
+
+  // .about__row1-version
+
+  &__row1-version {
+    text-align: center;
+    color: assets.$blue;
+    margin-top: 80px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("./about/table-1-img.svg");
+      background-repeat: no-repeat;
+      z-index: -1;
+      width: 355px;
+      height: 131px;
+      top: -30px;
+      left: -121px;
+    }
+  }
+
+  // .about__row1-license
+
+  &__row1-license {
+    text-align: center;
+    margin-top: 141px;
+    color: assets.$green;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("./about/table-2-img.svg");
+      background-repeat: no-repeat;
+      z-index: -1;
+      width: 465px;
+      height: 171px;
+      top: -60px;
+      left: -90px;
+    }
+  }
+
+  // .about__row1-whitelist
+
+  &__row1-whitelist {
+    margin-top: 150px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("./about/table-3-img.svg");
+      background-repeat: no-repeat;
+      z-index: -1;
+      width: 195px;
+      height: 195px;
+      top: -50px;
+      left: -55px;
+    }
+  }
+
+  // .about__table-row2
+
+  &__table-row2 {
+  }
+
+  // .about__row2-list
+
+  &__row2-list {
+  }
+
+  // .about__row2-item
+
+  &__row2-item {
+  }
+
+  // .about__row2-empty
+
+  &__row2-empty {
+    height: 100px;
+  }
+
+  // .about__row2-version--img
+
+  &__row2-version--img {
+    margin-left: 27px;
+  }
+
+  // .about__row2-version--text
+
+  &__row2-version--text {
+    text-align: center;
+  }
+
+  // .about__row2-license--img
+
+  &__row2-license--img {
+    margin-left: 15px;
+  }
+
+  // .about__row2-license--text
+
+  &__row2-license--text {
+    text-align: center;
+  }
+
+  // .about__row2-whitelist--img
+
+  &__row2-whitelist--img {
+    margin-left: 15px;
+  }
+
+  // .about__row2-whitelist--text
+
+  &__row2-whitelist--text {
+    text-align: center;
+  }
+
+  // .about__table-row3
+
+  &__table-row3 {
+  }
+
+  // .about__row3-list
+
+  &__row3-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .about__row3-item
+
+  &__row3-item {
+  }
+
+  // .about__row3-platform
+
+  &__row3-platform {
+    width: 100%;
+  }
+
+  // .about__row3-version
+
+  &__row3-version {
+    margin-top: 90px;
+    color: assets.$blue;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("./about/table-1-img.svg");
+      background-repeat: no-repeat;
+      z-index: -1;
+      width: 355px;
+      height: 131px;
+      top: -40px;
+      right: -70px;
+    }
+  }
+
+  // .about__row3-license
+
+  &__row3-license {
+    text-align: center;
+    margin-top: 170px;
+    position: relative;
+    color: assets.$green;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("./about/table-2-img.svg");
+      background-repeat: no-repeat;
+      z-index: -1;
+      width: 465px;
+      height: 171px;
+      top: -60px;
+      left: -90px;
+    }
+  }
+
+  // .about__row3-whitelist
+
+  &__row3-whitelist {
+    margin-top: 150px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("./about/table-3-img.svg");
+      background-repeat: no-repeat;
+      z-index: -1;
+      width: 195px;
+      height: 195px;
+      top: -50px;
+      left: -55px;
+    }
+  }
+}
